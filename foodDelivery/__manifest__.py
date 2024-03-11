@@ -12,6 +12,8 @@
         'security/ir.model.access.csv',
         'views/food_delivery_views.xml',
         'views/food_delivery_menus.xml',
+        'views/food_delivery_customer_views.xml',
+        'views/food_delivery_restaurant_views.xml',
     ],
     # data files containing optionally loaded demonstration data
     # 'demo': [

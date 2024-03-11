@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<odoo>
+    <record id="restaurant_form_view" model="ir.ui.view">
+        <field name="name">restaurant.form</field>
+        <field name="model">food.delivery.restaurant</field>
+        <field name="arch" type="xml">
+            <form string="Restaurant Form">
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="address"/>
+                        <field name="contact_info"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+</odoo>
