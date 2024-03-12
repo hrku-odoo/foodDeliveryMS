@@ -4,6 +4,8 @@ class Restaurant(models.Model):
     _name = 'food.delivery.restaurant'
     _description = 'Restaurant'
 
-    name = fields.Char(string='Name', required=True)
-    address = fields.Char(string='Address')
-    contact_info = fields.Char(string='Contact Information')
+    restaurant_name = fields.Char(string='Name', required=True)
+    restaurant_address = fields.Char(string='Address')
+    phone_no = fields.Char(string='Phone Number')
+    email = fields.Char(string="Email")
+    # rating = fields.Float(string="Rating", readonly=True)

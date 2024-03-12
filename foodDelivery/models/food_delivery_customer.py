@@ -5,6 +5,7 @@ class Customer(models.Model):
     _name = 'food.delivery.customer'
     _description = 'Customer'
 
-    name = fields.Char(string='Name', required=True)
-    address = fields.Char(string='Address')
+    customer_name = fields.Char(string='Name', required=True)
+    customer_address = fields.Char(string='Address')
     contact_info = fields.Char(string='Contact Information')
+    email = fields.Char(string="Email")

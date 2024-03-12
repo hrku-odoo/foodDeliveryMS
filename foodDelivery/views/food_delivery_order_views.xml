@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="order_tree_view" model="ir.ui.view">
+        <field name="name">order.tree</field>
+        <field name="model">food.delivery.order</field>
+        <field name="arch" type="xml">
+            <tree string="Orders">
+                <field name="customer_id"/>
+                <field name="restaurant_id"/>
+                <field name="total_price"/>
+                <field name="order_date"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="order_form_view" model="ir.ui.view">
+        <field name="name">order.form</field>
+        <field name="model">food.delivery.order</field>
+        <field name="arch" type="xml">
+            <form string="Order Form">
+                <sheet>
+                    <group>
+                        <field name="customer_id"/>
+                        <field name="restaurant_id"/>
+                        <field name="total_price"/>
+                        <field name="order_date"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="food_delivery_order_action" model="ir.actions.act_window">
+        <field name="name">Order</field>
+        <field name="res_model">food.delivery.order</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+</odoo>

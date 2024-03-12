@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <menuitem id="food_delivery_root" name="Food Delivery">
+    <menuitem id="food_delivery_menu_root" name="Food Delivery">
         <menuitem id="food_delivery_advertisement_menu" name="Advertisement" >
-            <menuitem id="food_delivery_menu_action" action="food_delivery_action" />
+            <menuitem id="food_delivery_restaurant_menu_action" action="food_delivery_restaurant_action" />
+        </menuitem>
+          <menuitem id="food_delivery_setting_menu" name="Configuration" >
+            <menuitem id="food_delivery_customer_menu_action" action="food_delivery_customer_action" />
+            <menuitem id="food_delivery_menu_item_menu_action" action="food_delivery_menu_item_action" />
+            <menuitem id="food_delivery_order_menu_action" action="food_delivery_order_action" />
         </menuitem>
     </menuitem>
-
 </odoo>

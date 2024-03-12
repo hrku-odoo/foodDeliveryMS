@@ -1,0 +1,20 @@
+<odoo>
+    <record id="menu_item_tree_view" model="ir.ui.view">
+        <field name="name">menu.item.tree</field>
+        <field name="model">food.delivery.menu.item</field>
+        <field name="arch" type="xml">
+            <tree string="Menu Items">
+                <field name="name"/>
+                <field name="description"/>
+                <field name="price"/>
+                <field name="restaurant_id"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="food_delivery_menu_item_action" model="ir.actions.act_window">
+        <field name="name">Menu Item</field>
+        <field name="res_model">food.delivery.menu.item</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+</odoo>

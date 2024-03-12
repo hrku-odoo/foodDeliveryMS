@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="delivery_tree_view" model="ir.ui.view">
+        <field name="name">delivery.tree</field>
+        <field name="model">food.delivery.delivery</field>
+        <field name="arch" type="xml">
+            <tree string="Deliveries">
+                <field name="order_id"/>
+                <field name="driver_id"/>
+                <field name="delivery_status"/>
+                <field name="delivery_date"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="delivery_form_view" model="ir.ui.view">
+        <field name="name">delivery.form</field>
+        <field name="model">food.delivery.delivery</field>
+        <field name="arch" type="xml">
+            <form string="Delivery Form">
+                <sheet>
+                    <group>
+                        <field name="order_id"/>
+                        <field name="driver_id"/>
+                        <field name="delivery_status"/>
+                        <field name="delivery_date"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+</odoo>

@@ -8,12 +8,20 @@
             <form string="Customer Form">
                 <sheet>
                     <group>
-                        <field name="name"/>
-                        <field name="address"/>
+                        <field name="customer_name"/>
+                        <field name="customer_address"/>
                         <field name="contact_info"/>
+                        <field name="email"/>
                     </group>
                 </sheet>
             </form>
         </field>
+    </record>
+
+      <record id="food_delivery_customer_action" model="ir.actions.act_window">
+        <field name="name">Customer</field>
+        <field name="res_model">food.delivery.customer</field>
+        <field name="view_mode">tree,form</field>
+        <!-- <field name="view_id" ref="restaurant_form_view"/> -->
     </record>
 </odoo>

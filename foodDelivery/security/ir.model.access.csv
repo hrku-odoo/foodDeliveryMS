@@ -1,2 +1,8 @@
 id,name,model_id/id,group_id/id,perm_read,perm_write,perm_create,perm_unlink
-
+access_food_delivery_restaurant,access_food_delivery_restaurant,model_food_delivery_restaurant,base.group_user,1,1,1,1
+access_food_delivery_customer,access_food_delivery_customer,model_food_delivery_customer,base.group_user,1,1,1,1
+access_food_delivery_menu_item,access_food_delivery_menu_item,model_food_delivery_menu_item,base.group_user,1,1,1,1
+access_food_delivery_delivery,access_food_delivery_delivery,model_food_delivery_delivery,base.group_user,1,1,1,1
+access_food_delivery_order,access_food_delivery_order,model_food_delivery_order,base.group_user,1,0,0,0
+access_food_delivery_order_line,access_food_delivery_order_line,model_food_delivery_order_line,base.group_user,1,0,0,0
+access_food_delivery_driver,access_food_delivery_driver,model_food_delivery_driver,base.group_user,1,0,0,0

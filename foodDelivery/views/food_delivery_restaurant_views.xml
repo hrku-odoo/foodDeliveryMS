@@ -8,12 +8,21 @@
             <form string="Restaurant Form">
                 <sheet>
                     <group>
-                        <field name="name"/>
-                        <field name="address"/>
-                        <field name="contact_info"/>
+                        <field name="restaurant_name"/>
+                        <field name="restaurant_address"/>
+                        <field name="phone_no"/>
+                        <field name="email"/>
+                        <!-- <field name="rating"/> -->
                     </group>
                 </sheet>
             </form>
         </field>
+    </record>
+
+    <record id="food_delivery_restaurant_action" model="ir.actions.act_window">
+        <field name="name">Restaurants</field>
+        <field name="res_model">food.delivery.restaurant</field>
+        <field name="view_mode">tree,form</field>
+        <!-- <field name="view_id" ref="restaurant_form_view"/> -->
     </record>
 </odoo>
