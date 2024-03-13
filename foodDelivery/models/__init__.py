@@ -5,3 +5,4 @@ from . import food_delivery_order
 from . import food_delivery_order_line
 from . import food_delivery_driver
 from . import food_delivery_delivery
+from . import food_delivery_menu_tag

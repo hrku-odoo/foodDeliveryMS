@@ -1,18 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
     <record id="driver_tree_view" model="ir.ui.view">
-        <field name="name">driver.tree</field>
+        <field name="name">food.delivery.driver.tree</field>
         <field name="model">food.delivery.driver</field>
         <field name="arch" type="xml">
             <tree string="Drivers">
                 <field name="name"/>
                 <field name="contact_info"/>
+                <field name="vehicle_number"/>
             </tree>
         </field>
     </record>
 
     <record id="driver_form_view" model="ir.ui.view">
-        <field name="name">driver.form</field>
+        <field name="name">food.delivery.driver.form</field>
         <field name="model">food.delivery.driver</field>
         <field name="arch" type="xml">
             <form string="Driver Form">
@@ -20,9 +21,16 @@
                     <group>
                         <field name="name"/>
                         <field name="contact_info"/>
+                        <field name="vehicle_number"/>
                     </group>
                 </sheet>
             </form>
         </field>
+    </record>
+
+     <record id="food_delivery_driver_action" model="ir.actions.act_window">
+        <field name="name">Driver</field>
+        <field name="res_model">food.delivery.driver</field>
+        <field name="view_mode">tree,form</field>
     </record>
 </odoo>

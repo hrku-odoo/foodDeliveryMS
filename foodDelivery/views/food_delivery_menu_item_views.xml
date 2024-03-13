@@ -12,6 +12,23 @@
         </field>
     </record>
 
+    <record id="menu_item_form_view" model="ir.ui.view">
+        <field name="name">menu.item.form</field>
+        <field name="model">food.delivery.menu.item</field>
+        <field name="arch" type="xml">
+            <form string="Item Form">
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="description"/>
+                        <field name="price"/>
+                        <field name="restaurant_id"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
     <record id="food_delivery_menu_item_action" model="ir.actions.act_window">
         <field name="name">Menu Item</field>
         <field name="res_model">food.delivery.menu.item</field>

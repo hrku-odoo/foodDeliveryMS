@@ -18,7 +18,7 @@
         <field name="arch" type="xml">
             <form string="Order Line Form">
                 <sheet>
-                    <group>
+                    <group> 
                         <field name="order_id"/>
                         <field name="item_id"/>
                         <field name="quantity"/>
@@ -26,5 +26,11 @@
                 </sheet>
             </form>
         </field>
+    </record>
+
+    <record id="food_delivery_order_line_action" model="ir.actions.act_window">
+        <field name="name">Order Line</field>
+        <field name="res_model">food.delivery.order.line</field>
+        <field name="view_mode">tree,form</field>
     </record>
 </odoo>

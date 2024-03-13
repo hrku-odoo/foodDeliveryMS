@@ -2,20 +2,33 @@
 
 <odoo>
     <record id="restaurant_form_view" model="ir.ui.view">
-        <field name="name">restaurant.form</field>
+        <field name="name">food.delivery.restaurant.form</field>
         <field name="model">food.delivery.restaurant</field>
         <field name="arch" type="xml">
             <form string="Restaurant Form">
                 <sheet>
                     <group>
-                        <field name="restaurant_name"/>
+                        <field name="name"/>
                         <field name="restaurant_address"/>
                         <field name="phone_no"/>
                         <field name="email"/>
-                        <!-- <field name="rating"/> -->
+                        <field name="zipcode"/>
                     </group>
                 </sheet>
             </form>
+        </field>
+    </record>
+
+    <record id="restaurant_tree_view" model="ir.ui.view">
+        <field name="name">food.delivery.restaurant.tree</field>
+        <field name="model">food.delivery.restaurant</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name" />
+                <field name="email" />
+                <field name="phone_no" />
+                <field name="zipcode" />
+            </tree>
         </field>
     </record>
 

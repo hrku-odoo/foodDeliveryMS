@@ -5,7 +5,7 @@
         <field name="model">food.delivery.order</field>
         <field name="arch" type="xml">
             <tree string="Orders">
-                <field name="customer_id"/>
+                <field name="name"/>
                 <field name="restaurant_id"/>
                 <field name="total_price"/>
                 <field name="order_date"/>
@@ -20,11 +20,18 @@
             <form string="Order Form">
                 <sheet>
                     <group>
-                        <field name="customer_id"/>
+                        <field name="name"/>
                         <field name="restaurant_id"/>
                         <field name="total_price"/>
                         <field name="order_date"/>
                     </group>
+                    <notebook>
+                        <page string="Order Lines">
+                            <tree>
+                                <field name="order_line_ids" />
+                            </tree>
+                        </page>
+                    </notebook>
                 </sheet>
             </form>
         </field>

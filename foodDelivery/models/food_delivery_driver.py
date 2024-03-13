@@ -6,3 +6,4 @@ class DeliveryDriver(models.Model):
 
     name = fields.Char(string='Name', required=True)
     contact_info = fields.Char(string='Contact Information')
+    vehicle_number = fields.Char(string="Vehicle Number")

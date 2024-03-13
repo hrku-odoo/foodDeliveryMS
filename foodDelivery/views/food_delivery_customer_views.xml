@@ -2,13 +2,13 @@
 
 <odoo>
     <record id="customer_form_view" model="ir.ui.view">
-        <field name="name">customer.form</field>
+        <field name="name" >food.delivery.customer.form</field>
         <field name="model">food.delivery.customer</field>
         <field name="arch" type="xml">
             <form string="Customer Form">
                 <sheet>
                     <group>
-                        <field name="customer_name"/>
+                        <field name="name"/>
                         <field name="customer_address"/>
                         <field name="contact_info"/>
                         <field name="email"/>
@@ -18,10 +18,22 @@
         </field>
     </record>
 
-      <record id="food_delivery_customer_action" model="ir.actions.act_window">
+    <record id="customer_tree_view" model="ir.ui.view">
+        <field name="name">food.delivery.customer.tree</field>
+        <field name="model">food.delivery.customer</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+                <field name="customer_address"/>
+                <field name="contact_info"/>
+                <field name="email"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="food_delivery_customer_action" model="ir.actions.act_window">
         <field name="name">Customer</field>
         <field name="res_model">food.delivery.customer</field>
         <field name="view_mode">tree,form</field>
-        <!-- <field name="view_id" ref="restaurant_form_view"/> -->
     </record>
 </odoo>
